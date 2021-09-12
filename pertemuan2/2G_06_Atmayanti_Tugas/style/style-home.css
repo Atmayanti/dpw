@@ -1,0 +1,147 @@
+        /* Penerapan position sticky*/
+        .navbar{
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        /* Penerapan wanrna huruf */
+        a{
+            color: black;
+        }
+        /* Penerapan warna background dan margin */
+        nav, footer {
+            background-color: rgb(237, 237, 237);
+            margin-top: 0;
+        }
+        /* Penerapan style list */
+        ul {
+            list-style-type: none;
+            margin-left: 60%;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(237, 237, 237);
+            margin-top: 0;
+        }
+        /* Penerapan float, padding, dan height */
+        li {
+            float: left;
+            padding-top: 10px;
+            height: 60px;
+        }
+        .nv {
+            float: left;
+            height: 60px;
+        }
+        /* Penerapan display */
+        li a {
+            display: block;
+            text-align: center; /* Penerapan align */
+            padding: 12px 14px;
+            color: black;
+            border-radius: 4px; /* Penerapan border radius */
+            margin-top: 0;
+        }
+        li a:hover:not(.active) { 
+            background-color: #d32626;
+            color: white;
+            margin-top: 0;
+        }
+        .active {
+            background-color: #d32626;
+            color: white;
+            margin-top: 0;
+            border: 1px solid #d32626;
+        }
+        .button{
+            background-color: #d32626;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            height: 40px;
+        }
+        .form{
+            border: 1px solid lightgray;
+            height: 40px;
+            width: 250px;
+            padding-left: 10px;
+            border-radius: 4px;
+        }
+        .container {
+            margin-left: 150px;
+        }
+        .dropbtn {
+            background-color: #d32626;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute; /* Penerapan position absolute */
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            margin: 10px;
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: #d32626;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown:hover .dropbtn {
+            background-color: #d32626;
+        }
+        .kos{
+            display: flex;
+            margin-right: 150px;
+        }
+        .linkpromo{
+            margin-left: 10px;
+            padding: 10px;
+        }
+        .linkpromo:hover{
+            background-color: rgba(228, 98, 98, 0.837);
+            border-radius: 4px;
+        }
+        .diskon{
+            color: #d32626;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .fasilitas{
+            font-size: 12px;
+        }
+        .ket-footer{
+            display: flex;
+            margin-left: 70px;
+        }
+        .item-footer{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .item-footer a:hover{
+            color: #d32626;
+        }
+        h4{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        hr{
+            background-color: lightgrey;
+            width: 80%;
+        }

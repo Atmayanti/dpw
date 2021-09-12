@@ -1,0 +1,66 @@
+            hr{
+                background-color: white; 
+                height: 3px; 
+                margin: 3; 
+                width: 410; /* Penerapan width */
+            }
+            h3{
+                background-color: #d32626;
+                color: white;
+                border-radius: 4px;
+                height: 40px;
+                width: 420px;
+                text-align: center;
+                margin-bottom: 3;
+                margin-top: 0;
+            }
+            label{
+                margin-bottom: 0;
+            }
+            input, textarea{
+                border: 1px solid gray;
+                padding: 10px;
+            }
+            input:hover, textarea:hover{ /* Penerapan hover */
+                background-color:  #d326268a;
+            }
+            .isian-formulir {
+                margin-bottom: 10px;
+                width: 400px;
+                height: 40px;
+                padding-left: 10px;
+                border-radius: 6px;
+            }
+            th{
+                width: 400px;
+                text-align: left;
+            }
+            td{
+                width: 80%;
+            }
+            td, tr
+            table
+            {
+                padding: 10px;
+                background-color: white;
+                display: flex;
+                border-radius: 6px;
+            }
+            th{
+                padding-left: 10px;
+                background-color: white;
+                display: flex;
+                border-radius: 6px;
+            }
+            table{
+                background-color: white;
+                border-radius: 6px;
+            }
+            .button{
+                background-color: #d32626;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                height: 40px;
+                width: 420px;
+            }

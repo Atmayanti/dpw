@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Pendaftaran Akun Baru</title>
+        <link rel="stylesheet" href="style/style-table.css">
+        <link rel="shortcut icon" href="img/logo.png">
+    </head>
+    <body style="margin-left: 100px; font-family: 'Segoe UI', Geneva, Verdana; background: url('img/kosan.jpg');">
+        <div>
+            <br><br>
+            <h3>Daftar Akun</h3>
+            <hr>
+            <!-- Penerapan FORM dengan METHOD POST -->
+            <form action="home.html" method="POST">
+                <table style="border-collapse: collapse;">
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <td class="isian-formulir"><input type="text" name="nama" placeholder="Masukkan nama lengkap kamu  " class="isian-formulir" required></td>
+                    </tr>
+                    <tr>
+                        <th>Jenis Kelamin</th>
+                        <td class="isian-formulir"><input type="text" placeholder="Masukkan jenis kelamin juga" name="jenis_kelamin" class="isian-formulir" required></td>
+                    </tr>
+                    <tr>
+                        <th>Alamat</th>
+                        <td class="isian-formulir"><textarea rows="2" placeholder="Masukkan alamat sesuai KTP  " cols="40" name="alamat" class="isian-formulir"></textarea></td>
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td class="isian-formulir"><input type="email" placeholder="Masukkan email buat akun Mekos" name="email" class="isian-formulir" required></td>
+                    </tr>
+                    <tr>
+                        <th>Password</th>
+                        <td class="isian-formulir"><input type="password" placeholder="Masukkan password 8 karakter  " name="pass" class="isian-formulir" required></td>
+                    </tr>
+                    <tr>
+                        <th>Upload Foto Profil</th>
+                        <td class="isian-formulir"><input type="file" name="fotopenyewa" class="isian-formulir"></td>
+                    </tr>
+                </table>
+                <p><input class="button" type="submit" name="simpan" value="Simpan"></p>
+            </form>
+        </div>
+    </body>
+</html>

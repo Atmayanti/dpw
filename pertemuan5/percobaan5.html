@@ -9,13 +9,9 @@
             <p id="p2">Ini adalah paragraf kedua</p>
         </div>
         <script>
-            // Membuat element <p>
-            var p3 = document.createElement("p");
-            var node = document.createTextNode('Ini paragraf ke 3 dengan Javascript');
-            // memasukkan text dalam element <p> baru
-            p3.appendChild(node);
-            //memasukkan <p> beru pada div id=dv
-            document.getElementById("dv").appendChild(p3);
+            var parent = document.getElementById("dv");
+            var child = document.getElementById("p2");
+            parent.removeChild(child);
         </script>
     </body>
 </html>

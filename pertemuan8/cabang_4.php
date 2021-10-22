@@ -4,7 +4,7 @@
     </head>
     <body>
         <?php
-            $tujuan = "Bali";
+            $tujuan = "Malang";
 
             echo "Mau main kemana? ".$tujuan."<br>";
             echo "<br> Pesan: ";

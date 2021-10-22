@@ -4,7 +4,7 @@
     </head>
     <body>
         <?php
-            $bilangan = 17;
+            $bilangan = 4;
             if ($bilangan % 2 == 0) {
                 echo "bilangan genap";
             } else {

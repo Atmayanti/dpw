@@ -4,7 +4,7 @@
     </head>
     <body>
         <?php
-            $nilai = 85;
+            $nilai = 40;
             if ($nilai  >= 80) {
                 echo "nilai A";
             } else if ($nilai >= 70) {

@@ -12,7 +12,7 @@
         echo "Koneksi dengan MySQL gagal".mysqli_connect_error();
     }
 
-    $sql = "CREATE DATABASE praktikum";
+    $sql = "CREATE DATABASE praktikumdb";
     if (mysqli_query($connect, $sql)) {
         echo "Database berhasil dibuat";
     }

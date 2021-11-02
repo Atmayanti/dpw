@@ -4,7 +4,8 @@
     </head>
     <body>
         <?php 
-            $nama = "Budi";
+            $nama = "Andi";
+            //$nama = "Budi";
 
             if ($nama=="Andi") {
                 echo "Selamat belajar $nama";

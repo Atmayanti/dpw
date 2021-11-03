@@ -11,7 +11,7 @@
     if ($result) {
         echo "Berhasil update data ke database ";
 ?>
-    <a href="homeDRUD.php">Lihat data di Tabel</a>
+    <a href="homeCRUD.php">Lihat data di Tabel</a>
 <?php
     } else {
         echo "Gagal update data".mysqli_error($connect);

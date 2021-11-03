@@ -25,6 +25,7 @@
                 <td><?php echo $row["alamat"]?></td>
                 <td>
                     <a href="editForm.php?id=<?php echo $row['id']?>">Edit</a>
+                    <a href="hapus.php?id=<?php echo $row['id']?>">Hapus</a>
                 </td>
             </tr>
             <?php            

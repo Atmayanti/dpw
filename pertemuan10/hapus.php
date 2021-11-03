@@ -3,7 +3,7 @@
 
     $id = $_GET['id'];
     $query = "DELETE FROM mahasiswa WHERE id = '$id'";
-    $result=mysqli_query($connect, $$query);
+    $result=mysqli_query($connect, $query);
 
     if ($result) {
         echo "Data berhasil dihapus";

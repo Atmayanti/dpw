@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en">
     <head>
         <style>
             .error {color: #FF0000;}
@@ -18,19 +17,19 @@
             $pesan="";
             if ($error=="variabel_belum_diset") {
                 $pesan="Anda harus mengakses halaman ini dari form_2.php";
-            } else if ($error="nama_kosong") {
+            } else if ($error=="nama_kosong") {
                 $pesan="Nama harus diisi";
-            } else if ($error="email_kosong") {
+            } else if ($error=="email_kosong") {
                 $pesan="Email harus diisi";
             }
             
             //Siapkan isian form jika terjadi kesalahan
-            if (isset($_GET['nama']) and isset($_GET['email'])and isset($_GET['komentar'])) {
+            if (isset($_GET['nama']) and isset($_GET['email']) and isset($_GET['komentar'])) {
                 $nama=$_GET['nama'];
                 $email=$_GET['email'];
                 $komentar=$_GET['komentar'];
             } else {
-                $name="";
+                $nama="";
                 $email="";
                 $komentar="";
             }

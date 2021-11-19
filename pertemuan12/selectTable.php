@@ -6,13 +6,13 @@
         <table>
             <tr>
                 <th>ID</th>
-                <th>Nama</th>
-                <th>Alamat</th>
+                <th>Nama Produk</th>
+                <th>Harga</th>
             </tr>
             <?php 
                 include "koneksi.php";
 
-                $query = "SELECT * FROM mahasiswa";
+                $query = "SELECT * FROM product";
                 $result = mysqli_query($connect, $query);
 
                 if (mysqli_num_rows($result) > 0) {
@@ -20,8 +20,8 @@
             ?>
             <tr>
                 <td><?php echo $row["id"]?></td>
-                <td><?php echo $row["nama"]?></td>
-                <td><?php echo $row["alamat"]?></td>
+                <td><?php echo $row["product_name"]?></td>
+                <td><?php echo $row["harga"]?></td>
             </tr>
             <?php            
                     }

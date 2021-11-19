@@ -2,17 +2,17 @@
     include "koneksi.php";
 
     $id = $_GET['id'];
-    $nama = $_GET['nama'];
-    $alamat = $_GET['alamat'];
+    $nama = $_GET['name'];
+    $harga = $_GET['price'];
 
-    $sql = "INSERT INTO mahasiswa(id, nama, alamat)
-            VALUE('$id', '$nama', '$alamat')";
+    $sql = "INSERT INTO product(id, product_name, harga)
+            VALUE('$id', '$nama', '$harga')";
 
     if (mysqli_query($connect, $sql)) {
-        echo "Record berhasil ditambahkan";
+        echo "Data berhasil ditambahkan";
     }
     else {
-        echo "Record gagal ditambahkan <br>".mysqli_error($connect);
+        echo "Data gagal ditambahkan <br>".mysqli_error($connect);
     }
 
     mysqli_close($connect);

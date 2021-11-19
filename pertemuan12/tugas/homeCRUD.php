@@ -2,7 +2,7 @@
 
 <head>
     <title>Data Product</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         </tr>
 
         <?php
-        include "koneksi.php";
+        include "../koneksi.php";
 
         $connect = mysqli_connect("localhost", "root", "", "prakwebdb");
         $query = "SELECT * FROM product";
@@ -30,7 +30,7 @@
                     <td> <?php echo $row["id"] ?> </td>
                     <td> <?php echo $row["product_name"] ?> </td>
                     <td> <?php echo $row["harga"] ?> </td>
-                    <td><img width="300px" src='image/<?php echo $row["foto"] ?>'> </td>;
+                    <td><img width="70px" height="70px" src='image/<?php echo $row["foto"] ?>'> </td>;
                     <td>
 
                         <a href="editForm.php?id=<?php echo $row['id']; ?>">

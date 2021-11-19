@@ -1,8 +1,8 @@
 <?php 
-    $namaHost = "localhost";
+    $hostname = "localhost";
     $username = "root";
     $password = "";
-    $database = "praktikumdb";
+    $database = "prakwebdb";
 
-    $connect = mysqli_connect($namaHost, $username, $password, $database);
+    $connect = mysqli_connect($hostname, $username, $password, $database);
 ?>

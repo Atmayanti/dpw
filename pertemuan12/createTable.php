@@ -1,10 +1,10 @@
 <?php 
-    $namaHost = "localhost";
+    $hostname = "localhost";
     $username = "root";
     $password = "";
-    $database = "praktikumdb";
+    $database = "prakwebdb";
 
-    $connect = mysqli_connect($namaHost, $username, $password, $database);
+    $connect = mysqli_connect($hostname, $username, $password, $database);
 
     if ($connect) {
         echo "Koneksi dengan MySQL berhasil <br>";
@@ -13,16 +13,16 @@
         echo "Koneksi dengan MySQL gagal".mysqli_connect_error();
     }
 
-    $sql = "CREATE TABLE mahasiswa(
+    $sql = "CREATE TABLE product(
             id INT PRIMARY KEY,
-            nama VARCHAR(30) NOT NULL,
-            alamat VARCHAR(50) NOT NULL)";
+            product_name VARCHAR(30) NOT NULL,
+            harga INT NOT NULL)";
 
     if (mysqli_query($connect, $sql)) {
-        echo "Tabel mahasiswa berhasil dibuat";
+        echo "Tabel Product berhasil dibuat";
     }
     else {
-        echo "Tabel mahasiswa gagal dibuat <br>".mysqli_error($connect);
+        echo "Tabel Product gagal dibuat <br>".mysqli_error($connect);
     }
 
     mysqli_close($connect);

@@ -1,10 +1,10 @@
 <?php 
-    $namaHost = "localhost";
+    $hostname = "localhost";
     $username = "root";
     $password = "";
-    $database = "praktikumdb";
+    $database = "prakwebdb";
 
-    $connect = mysqli_connect($namaHost, $username, $password, $database);
+    $connect = mysqli_connect($hostname, $username, $password, $database);
 
     if ($connect) {
         echo "Koneksi dengan MySQL berhasil <br>";
@@ -13,15 +13,15 @@
         echo "Koneksi dengan MySQL gagal".mysqli_connect_error();
     }
 
-    $sql = "INSERT INTO mahasiswa(id, nama, alamat)
-            VALUES ('0001', 'George', 'malang'), ('0002', 'Charlotte',
-            'malang'), ('0003', 'Louis', 'surabaya')";
+    $sql = "INSERT INTO product(id, product_name, harga)
+            VALUES ('1', 'Pensil', '3000'),('2', 'Penghapus', '1500'),
+                    ('3', 'Pulpen', '4000'),('4', 'Correction Pen', '6000')";
 
     if (mysqli_query($connect, $sql)) {
-        echo "Record berhasil ditambahkan";
+        echo "Data berhasil ditambahkan";
     }
     else {
-        echo "Record gagal ditambahkan <br>".mysqli_error($connect);
+        echo "Data gagal ditambahkan <br>".mysqli_error($connect);
     }
 
     mysqli_close($connect);

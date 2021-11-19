@@ -14,7 +14,7 @@
             <th> Foto </th>
         </tr>
         <?php
-        include "koneksi.php";
+        include "../koneksi.php";
 
         $query = "SELECT * FROM product";
         $result = mysqli_query($connect, $query);

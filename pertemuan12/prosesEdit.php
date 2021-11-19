@@ -2,16 +2,16 @@
     include "koneksi.php";
 
     $id = $_GET['id'];
-    $nama = $_GET['nama'];
-    $alamat = $_GET['alamat'];
+    $nama = $_GET['name'];
+    $harga = $_GET['price'];
 
-    $query="UPDATE mahasiswa SET nama='$nama', alamat='$alamat' WHERE id='$id'";
+    $query="UPDATE product SET product_name='$nama', harga='$harga' WHERE id='$id'";
     $result=mysqli_query($connect, $query);
 
     if ($result) {
-        echo "Berhasil update data ke database ";
+        echo "Berhasil update data";
 ?>
-    <a href="homeCRUD.php">Lihat data di Tabel</a>
+    <a href="homeCRUD.php">Lihat data</a>
 <?php
     } else {
         echo "Gagal update data".mysqli_error($connect);
